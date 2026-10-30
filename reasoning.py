@@ -90,15 +90,15 @@ def decode_json(raw):
         raise AssistantError("内容不是有效或可处理的 JSON。") from exc
 
 
-def load_json(path: Path):
+def load_json(path: Path, *, description: str = "规则或事实"):
     try:
         with path.open("rb") as stream:
             raw = stream.read(100_001)
         if len(raw) > 100_000:
-            raise AssistantError("规则或事实文件最多为 100 KB。")
+            raise AssistantError(f"{description}文件最多为 100 KB。")
         return decode_json(raw)
     except OSError as exc:
-        raise AssistantError("无法读取规则或事实文件；请检查路径及 JSON 格式。") from exc
+        raise AssistantError(f"无法读取{description}文件；请检查路径及 JSON 格式。") from exc
 
 
 def validate_expression(node, *, depth=0, budget=None):

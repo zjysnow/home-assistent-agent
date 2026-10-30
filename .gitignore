@@ -3,6 +3,7 @@
 .env.*
 !.env.example
 /config.local.json
+/persona.local.json
 *.pem
 *.key
 
