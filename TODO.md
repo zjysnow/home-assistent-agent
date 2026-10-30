@@ -47,6 +47,8 @@
 
 - [x] 初始化 Git 仓库（main 分支）。
 - [x] 将每轮修改验证后提交 Git 的流程写入项目指引。
+- [x] 添加 MIT 开源许可证，说明外部模型和数据不随本项目重新授权。
+- [x] 创建公开 GitHub 仓库：[zjysnow/home-assistent-agent](https://github.com/zjysnow/home-assistent-agent)。
 - [x] 整理项目目标、阶段规划及隐私与权限边界。
 - [x] 配置 Git 忽略规则，排除密钥、录音、模型和运行数据。
 
