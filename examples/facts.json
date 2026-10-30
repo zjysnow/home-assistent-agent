@@ -1,0 +1,7 @@
+{
+  "facts": {
+    "study.occupied": true,
+    "study.dark": true,
+    "study.sleeping": false
+  }
+}

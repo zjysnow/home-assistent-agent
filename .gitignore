@@ -1,0 +1,32 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+/config.local.json
+*.pem
+*.key
+
+# Local runtime data, voice samples, and model files
+/data/
+/recordings/
+/models/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+
+# Local dependencies and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+/dist/
+/build/
+
+# Operating system files
+.DS_Store
+Thumbs.db

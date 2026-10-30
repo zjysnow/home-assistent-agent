@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "suggest_reading_light",
+      "when": {
+        "all": [
+          {"fact": "study.occupied"},
+          {"fact": "study.dark"},
+          {"not": {"fact": "study.sleeping"}}
+        ]
+      },
+      "suggestion": "建议为书房补光；这不是设备控制授权。"
+    }
+  ]
+}
